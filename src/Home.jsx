@@ -29,10 +29,6 @@ const Home = () => {
 
   // Fetch weather data whenever city or unit changes
   useEffect(() => {
-    const message = `Fetching weather data for ${city}...`;
-    toast.info(message, {
-      position: "top-right",
-    });
     getFormattedWeatherData(city, unit)
       .then((data) => {
         setWeather(data);
