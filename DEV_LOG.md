@@ -96,5 +96,13 @@ Initially, I decided to create an e-commerce full-stack application and started 
     •	Finishing documentation
     •	Preparing for project submission
 
+### 27/05/2024: Final touch
+#### Task/Feature: Fixing minor issues.
+#### Time Spent: 3 hours.
+    •	Fixing vercel deployment issues
+    •	Adjusting documentation
+    •	Creating video demonstration
+    •	Preparing for project submission
+
 ### Total Hours
-Total Time Spent: 81 hours.
+Total Time Spent: 84 hours.

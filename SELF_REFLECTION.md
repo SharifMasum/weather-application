@@ -58,6 +58,8 @@ Implemented successfully. The project setup includes tools like Webpack and Babe
 #### Deployment
 The app is deployed in vercel.
 
+    https://weather-n6wpdaxxm-sharifmasums-projects.vercel.app/
+
 ### Grade Justification
 #### Core Requirements: 5/5
 All core functionalities are implemented successfully, providing a solid foundation for the applica-tion.

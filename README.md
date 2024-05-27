@@ -4,6 +4,8 @@ Check DEV_LOG.md for development log.
 
 Check SELF_REFLECTION.md for self-reflection
 
+Check asset folder for video demonstration.
+
 ##	Introduction
 ### Purpose
 The Weather Application is designed to provide users with real-time weather information for spec-ified locations. It allows users to search for weather conditions in different cities, view forecasts, and add favorite cities for quick access.
@@ -169,6 +171,10 @@ Provides context for the selected city. The useSelectedCity hook is used to acce
 
 ### Styling
 The application uses Tailwind CSS for styling and responsiveness. The main styles are defined in index.css.
+
+### Web deployment
+#### The app is deployed in Vercel under below domain
+    https://weather-n6wpdaxxm-sharifmasums-projects.vercel.app/
 
 ##	Conclusion
 This technical documentation provides an overview of the Weather Application, its architecture, implementation details, installation instructions, usage guide, etc.
