@@ -45,6 +45,10 @@ Create a .env file in the root directory and add the following:
     VITE_API_KEY = your_weather_api_key
     VITE_GEO_API_KEY = your_geo_api_key
 
+You can get your Geo API here: https://rapidapi.com/wirefreethought/api/geodb-cities/
+
+You can get your weather API here: https://www.weatherapi.com/
+
 ### Running the application
 To start the development server:
     npm run dev
