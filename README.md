@@ -36,21 +36,24 @@ The user interface is intuitive and easy to navigate. It includes search inputs,
 ##	Getting Started
 ### Prerequisite
 Ensure that the following have been installed on your development machine:
-    •	Node.js (v14 or higher)
-    •	npm (v6 or higher)
+
+    Node.js (v14 or higher)
+    npm (v6 or higher)
 
 ## Installation
 1.	Clone the repository:
+
     git clone https://gitlab.labranet.jamk.fi/application-framework/weather-app.git
-    https://github.com/SharifMasum/weather-app.git
     cd weather-forecast
 2.	Install the dependencies:
+
     npm install
 3.	Set up environment variables:
 
 Create a .env file in the root directory and add the following:
-*     VITE_API_KEY = your_weather_api_key
-*     VITE_GEO_API_KEY = your_geo_api_key
+
+    VITE_API_KEY = your_weather_api_key
+    VITE_GEO_API_KEY = your_geo_api_key
 
 You can get your Geo API here: https://rapidapi.com/wirefreethought/api/geodb-cities/
 
