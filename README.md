@@ -85,7 +85,7 @@ To preview the production build:
 
 ##	Components
 ### Home.jsx
-•   The main component that renders the home page. It includes:
+The main component that renders the home page. It includes:
     •	Navbar: Navigation bar.
     •	Search: Search bar for cities.
     •	TimeAndLocation: Displays current time and location.
@@ -94,39 +94,39 @@ To preview the production build:
     •	ToastContainer: Container for toast notifications.
 
 ### App.jsx
-•   Defines the routes for the application using react-router-dom. Routes include:
+Defines the routes for the application using react-router-dom. Routes include:
     •	/: Home component.
     •	/favoritepage: FavoritePage component.
 
 ### Forecast.jsx
-•   Renders the weather forecast details. Props:
+Renders the weather forecast details. Props:
     •	title: Title of the forecast section.
     •	unit: Unit of temperature (Celsius or Fahrenheit).
     •	forecast: Forecast data.
 
 ### Search.jsx
-•   Search component to look up cities using the GeoDB API. Props:
+Search component to look up cities using the GeoDB API. Props:
     •	setCity: Function to set the selected city.
     •	unit: Unit of temperature.
     •	setUnit: Function to set the unit of temperature.
     •	addToFavorites: Function to add a city to favorites.
 
 ### TemperatureDetails.jsx
-• Displays detailed weather information. Props:
+Displays detailed weather information. Props:
     •	unit: Unit of temperature.
     •	weather: Weather data object.
 
 ### TimeAndLocation.jsx
-• Displays the current time and location. Props:
+Displays the current time and location. Props:
     •	weather: Weather data object.
 
 ### FavoritePage.jsx
-• Component for managing and displaying favorite cities. It includes:
+Component for managing and displaying favorite cities. It includes:
     •	Navbar: Navigation bar.
     •	Favorites: List of favorite cities.
 
 ### Favorites.jsx
-• Renders the list of favorite cities. Props:
+Renders the list of favorite cities. Props:
     •	favoriteCities: List of favorite cities.
     •	removeFromFavorites: Function to remove a city from favorites.
     •	handleCitySelection: Function to handle city selection.
@@ -138,13 +138,13 @@ Navigation bar with links to Home and Favorites pages.
 For getting cities, we are using Rapid API’s GeoDB Cities API and for getting weather data we are using WeatherAPI. Both offers free tier subscription and that is what we are using with this appli-cation.
 
 ### Api.js
-•   Defines the base URLs and headers for the APIs:
+Defines the base URLs and headers for the APIs:
     •	GEO_API_URL: URL for the GeoDB API.
     •	geoApiOptions: Headers for the GeoDB API.
     •	BASE_URL: URL for the Weather API.
 
 ### weatherService.js
-•   Contains functions to fetch and format weather data:
+Contains functions to fetch and format weather data:
     •	fetchData: Fetches data from the Weather API.
     •	getFormattedWeatherData: Fetches and formats weather data.
     •	formatForecastWeather: Formats the weather data.
