@@ -12,7 +12,7 @@ import { useSelectedCity } from "./Context";
 const Home = () => {
   const [city, setCity] = useState("Tampere"); // Default city
   const [unit, setUnit] = useState("c"); // Default unit (Celsius)
-  const [weather, setWeather] = useState(null); // Weather data
+  const [weather, setWeather] = useState(null);
   const [favoriteCities, setFavoriteCities] = useState(() => {
     const storedFavorites = localStorage.getItem("favoriteCities");
     return storedFavorites ? JSON.parse(storedFavorites) : [];

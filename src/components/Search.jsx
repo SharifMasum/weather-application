@@ -56,7 +56,7 @@ const Search = ({ setCity, unit, setUnit, addToFavorites }) => {
       <div className="flex flex-row w-3/4 items-center justify-center space-x-4">
         <AsyncPaginate
           placeholder="Search for city"
-          debounceTimeout={600} // Delay for debouncing user input
+          debounceTimeout={600}
           value={search}
           onChange={handleOnChange}
           loadOptions={loadOptions}
