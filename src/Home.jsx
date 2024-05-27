@@ -35,7 +35,7 @@ const Home = () => {
       })
       .catch((error) => {
         toast.error(error.message, {
-          position: "top-center",
+          position: "top-right",
         });
       });
   }, [city, unit]);

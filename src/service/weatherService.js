@@ -1,8 +1,7 @@
 import { DateTime } from "luxon";
-// import { BASE_URL } from "../Api";
+import { BASE_URL } from "../Api";
 
 const API_KEY = "716018a909bb4ed3a7692446242104";
-const BASE_URL = "http://api.weatherapi.com/v1";
 
 // Function to fetch data from the weather API
 const fetchData = async (apiMethod, searchParams) => {
