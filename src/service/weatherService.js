@@ -1,8 +1,7 @@
 import { DateTime } from "luxon";
 import { BASE_URL } from "../Api";
 
-// Retrieve API key from environment variables
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = "716018a909bb4ed3a7692446242104";
 
 // Function to fetch data from the weather API
 const fetchData = async (apiMethod, searchParams) => {

@@ -1,4 +1,9 @@
 # Technical Documentation
+
+Check DEV_LOG.md for development log.
+
+Check SELF_REFLECTION.md for self-reflection
+
 ##	Introduction
 ### Purpose
 The Weather Application is designed to provide users with real-time weather information for spec-ified locations. It allows users to search for weather conditions in different cities, view forecasts, and add favorite cities for quick access.
@@ -42,8 +47,8 @@ Ensure that the following have been installed on your development machine:
 3.	Set up environment variables:
 
 Create a .env file in the root directory and add the following:
-    VITE_API_KEY = your_weather_api_key
-    VITE_GEO_API_KEY = your_geo_api_key
+*     VITE_API_KEY = your_weather_api_key
+*     VITE_GEO_API_KEY = your_geo_api_key
 
 You can get your Geo API here: https://rapidapi.com/wirefreethought/api/geodb-cities/
 
@@ -51,11 +56,11 @@ You can get your weather API here: https://www.weatherapi.com/
 
 ### Running the application
 To start the development server:
-    npm run dev
+*     npm run dev
 To build the application for production:
-    npm run build
+*     npm run build
 To preview the production build:
-    npm run preview
+*     npm run preview
  
 ## Directories
     •	components/: Contains reusable React components such as Search, TimeAndLocation, TemperatureDetails, and Forecast.
@@ -89,7 +94,7 @@ To preview the production build:
 
 ##	Components
 ### Home.jsx
-The main component that renders the home page. It includes:
+#### The main component that renders the home page. It includes:
     •	Navbar: Navigation bar.
     •	Search: Search bar for cities.
     •	TimeAndLocation: Displays current time and location.
@@ -98,39 +103,39 @@ The main component that renders the home page. It includes:
     •	ToastContainer: Container for toast notifications.
 
 ### App.jsx
-Defines the routes for the application using react-router-dom. Routes include:
+#### Defines the routes for the application using react-router-dom. Routes include:
     •	/: Home component.
     •	/favoritepage: FavoritePage component.
 
 ### Forecast.jsx
-Renders the weather forecast details. Props:
+#### Renders the weather forecast details. Props:
     •	title: Title of the forecast section.
     •	unit: Unit of temperature (Celsius or Fahrenheit).
     •	forecast: Forecast data.
 
 ### Search.jsx
-Search component to look up cities using the GeoDB API. Props:
+#### Search component to look up cities using the GeoDB API. Props:
     •	setCity: Function to set the selected city.
     •	unit: Unit of temperature.
     •	setUnit: Function to set the unit of temperature.
     •	addToFavorites: Function to add a city to favorites.
 
 ### TemperatureDetails.jsx
-Displays detailed weather information. Props:
+#### Displays detailed weather information. Props:
     •	unit: Unit of temperature.
     •	weather: Weather data object.
 
 ### TimeAndLocation.jsx
-Displays the current time and location. Props:
+#### Displays the current time and location. Props:
     •	weather: Weather data object.
 
 ### FavoritePage.jsx
-Component for managing and displaying favorite cities. It includes:
+#### Component for managing and displaying favorite cities. It includes:
     •	Navbar: Navigation bar.
     •	Favorites: List of favorite cities.
 
 ### Favorites.jsx
-Renders the list of favorite cities. Props:
+#### Renders the list of favorite cities. Props:
     •	favoriteCities: List of favorite cities.
     •	removeFromFavorites: Function to remove a city from favorites.
     •	handleCitySelection: Function to handle city selection.
@@ -142,13 +147,13 @@ Navigation bar with links to Home and Favorites pages.
 For getting cities, we are using Rapid API’s GeoDB Cities API and for getting weather data we are using WeatherAPI. Both offers free tier subscription and that is what we are using with this appli-cation.
 
 ### Api.js
-Defines the base URLs and headers for the APIs:
+#### Defines the base URLs and headers for the APIs:
     •	GEO_API_URL: URL for the GeoDB API.
     •	geoApiOptions: Headers for the GeoDB API.
     •	BASE_URL: URL for the Weather API.
 
 ### weatherService.js
-Contains functions to fetch and format weather data:
+#### Contains functions to fetch and format weather data:
     •	fetchData: Fetches data from the Weather API.
     •	getFormattedWeatherData: Fetches and formats weather data.
     •	formatForecastWeather: Formats the weather data.
