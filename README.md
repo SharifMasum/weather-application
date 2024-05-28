@@ -19,19 +19,19 @@ Teachers and instructors of course Application Framework of JAMK University of A
 
 ##	Usage
 ### Features
-    •	Search for weather information by city name or location coordinates.
-    •	View current weather conditions, including temperature, humidity, and wind speed.
-    •	See hourly and daily weather forecasts.
-    •	Add/remove favorite cities for quick access.
+* Search for weather information by city name or location coordinates.
+* View current weather conditions, including temperature, humidity, and wind speed.
+* See hourly and daily weather forecasts.
+* Add/remove favorite cities for quick access.
 
 ### User Interface
 The user interface is intuitive and easy to navigate. It includes search inputs, weather display sec-tions, and buttons for managing favorites.
 
 ### Workflow
-    •	Enter a city name or location coordinates in the search bar.
-    •	View the current weather conditions and forecasts.
-    •	Add favorite cities by clicking the "Add to Favorites" button.
-    •	Access favorite cities from the Favorites page for quick weather updates.
+* Enter a city name or location coordinates in the search bar.
+* View the current weather conditions and forecasts.
+* Add favorite cities by clicking the "Add to Favorites" button.
+* Access favorite cities from the Favorites page for quick weather updates.
 
 ##	Getting Started
 ### Prerequisite
@@ -61,89 +61,94 @@ You can get your weather API here: https://www.weatherapi.com/
 
 ### Running the application
 To start the development server:
-*     npm run dev
+
+    npm run dev
 To build the application for production:
-*     npm run build
+
+    npm run build
 To preview the production build:
-*     npm run preview
+
+    npm run preview
  
 ## Directories
-    •	components/: Contains reusable React components such as Search, TimeAndLocation, TemperatureDetails, and Forecast.
-    •	favorite/: Contains components related to the favorites feature, including Favorites and FvoritePage.
-    •	navbar/: Contains the Navbar component.
-    •	service/: Contains the weatherService.js file, which handles API calls and data formatting.
+* components/: Contains reusable React components such as Search, TimeAndLocation, TemperatureDetails, and Forecast.
+* favorite/: Contains components related to the favorites feature, including Favorites and FvoritePage.
+* navbar/: Contains the Navbar component.
+* service/: Contains the weatherService.js file, which handles API calls and data formatting.
+
 ## Dependencies
 ### Production Dependencies
-    •	@iconscout/react-unicons: Icon library.
-    •	dotenv: Environment variable management.
-    •	luxon: Date and time library.
-    •	react: Core React library.
-    •	react-bootstrap: Bootstrap components for React.
-    •	react-dom: React DOM bindings.
-    •	react-icons: Icon library.
-    •	react-router-dom: Routing library for React.
-    •	react-select-async-paginate: Async pagination for React Select.
-    •	react-toastify: Toast notifications.
+* @iconscout/react-unicons: Icon library.
+* dotenv: Environment variable management.
+* luxon: Date and time library.
+* react: Core React library.
+* react-bootstrap: Bootstrap components for React.
+* react-dom: React DOM bindings.
+* react-icons: Icon library.
+* react-router-dom: Routing library for React.
+* react-select-async-paginate: Async pagination for React Select.
+* react-toastify: Toast notifications.
+
 ### Development Dependencies
-    •	@types/react: TypeScript type definitions for React.
-    •	@types/react-dom: TypeScript type definitions for React DOM.
-    •	@vitejs/plugin-react: Vite plugin for React.
-    •	autoprefixer: PostCSS plugin for vendor prefixing.
-    •	eslint: JavaScript linter.
-    •	eslint-plugin-react: ESLint plugin for React.
-    •	eslint-plugin-react-hooks: ESLint plugin for React hooks.
-    •	eslint-plugin-react-refresh: ESLint plugin for React Refresh.
-    •	postcss: CSS transformations.
-    •	tailwindcss: CSS framework.
-    •	vite: Build tool.
+* @types/react: TypeScript type definitions for React.
+* @types/react-dom: TypeScript type definitions for React DOM.
+* @vitejs/plugin-react: Vite plugin for React.
+* autoprefixer: PostCSS plugin for vendor prefixing.
+* eslint: JavaScript linter.
+* eslint-plugin-react: ESLint plugin for React.
+* eslint-plugin-react-hooks: ESLint plugin for React hooks.
+* eslint-plugin-react-refresh: ESLint plugin for React Refresh.
+* postcss: CSS transformations.
+* tailwindcss: CSS framework.
+* vite: Build tool.
 
 ##	Components
 ### Home.jsx
 #### The main component that renders the home page. It includes:
-    •	Navbar: Navigation bar.
-    •	Search: Search bar for cities.
-    •	TimeAndLocation: Displays current time and location.
-    •	TemperatureDetails: Displays current weather details.
-    •	Forecast: Displays hourly and daily weather forecasts.
-    •	ToastContainer: Container for toast notifications.
+* Navbar: Navigation bar.
+* Search: Search bar for cities.
+* TimeAndLocation: Displays current time and location.
+* TemperatureDetails: Displays current weather details.
+* Forecast: Displays hourly and daily weather forecasts.
+* ToastContainer: Container for toast notifications.
 
 ### App.jsx
 #### Defines the routes for the application using react-router-dom. Routes include:
-    •	/: Home component.
-    •	/favoritepage: FavoritePage component.
+* /: Home component.
+* /favoritepage: FavoritePage component.
 
 ### Forecast.jsx
 #### Renders the weather forecast details. Props:
-    •	title: Title of the forecast section.
-    •	unit: Unit of temperature (Celsius or Fahrenheit).
-    •	forecast: Forecast data.
+* title: Title of the forecast section.
+* unit: Unit of temperature (Celsius or Fahrenheit).
+* forecast: Forecast data.
 
 ### Search.jsx
 #### Search component to look up cities using the GeoDB API. Props:
-    •	setCity: Function to set the selected city.
-    •	unit: Unit of temperature.
-    •	setUnit: Function to set the unit of temperature.
-    •	addToFavorites: Function to add a city to favorites.
+* setCity: Function to set the selected city.
+* unit: Unit of temperature.
+* setUnit: Function to set the unit of temperature.
+* addToFavorites: Function to add a city to favorites.
 
 ### TemperatureDetails.jsx
 #### Displays detailed weather information. Props:
-    •	unit: Unit of temperature.
-    •	weather: Weather data object.
+* unit: Unit of temperature.
+* weather: Weather data object.
 
 ### TimeAndLocation.jsx
 #### Displays the current time and location. Props:
-    •	weather: Weather data object.
+* weather: Weather data object.
 
 ### FavoritePage.jsx
 #### Component for managing and displaying favorite cities. It includes:
-    •	Navbar: Navigation bar.
-    •	Favorites: List of favorite cities.
+* Navbar: Navigation bar.
+* Favorites: List of favorite cities.
 
 ### Favorites.jsx
 #### Renders the list of favorite cities. Props:
-    •	favoriteCities: List of favorite cities.
-    •	removeFromFavorites: Function to remove a city from favorites.
-    •	handleCitySelection: Function to handle city selection.
+* favoriteCities: List of favorite cities.
+* removeFromFavorites: Function to remove a city from favorites.
+* handleCitySelection: Function to handle city selection.
 
 ### Navbar.jsx
 Navigation bar with links to Home and Favorites pages.
@@ -153,20 +158,20 @@ For getting cities, we are using Rapid API’s GeoDB Cities API and for getting 
 
 ### Api.js
 #### Defines the base URLs and headers for the APIs:
-    •	GEO_API_URL: URL for the GeoDB API.
-    •	geoApiOptions: Headers for the GeoDB API.
-    •	BASE_URL: URL for the Weather API.
+* GEO_API_URL: URL for the GeoDB API.
+* geoApiOptions: Headers for the GeoDB API.
+* BASE_URL: URL for the Weather API.
 
 ### weatherService.js
 #### Contains functions to fetch and format weather data:
-    •	fetchData: Fetches data from the Weather API.
-    •	getFormattedWeatherData: Fetches and formats weather data.
-    •	formatForecastWeather: Formats the weather data.
-    •	formatIconUrl: Formats the weather icon URL.
-    •	formatHourlyForecast: Formats the hourly forecast data.
-    •	formatDailyForecast: Formats the daily forecast data.
-    •	formatAstroData: Formats astronomical data.
-    •	formatToLocalTime: Converts epoch time to local time.
+* fetchData: Fetches data from the Weather API.
+* getFormattedWeatherData: Fetches and formats weather data.
+* formatForecastWeather: Formats the weather data.
+* formatIconUrl: Formats the weather icon URL.
+* formatHourlyForecast: Formats the hourly forecast data.
+* formatDailyForecast: Formats the daily forecast data.
+* formatAstroData: Formats astronomical data.
+* formatToLocalTime: Converts epoch time to local time.
 
 ##	State Management
 ### Context.jsx
