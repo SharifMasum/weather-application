@@ -413,4 +413,4 @@ The demo link: https://youtu.be/snUGiSFQW9s
 
 ## Web deployment
 #### The app is deployed in Vercel under below domain
-    https://weather-n6wpdaxxm-sharifmasums-projects.vercel.app/
+https://weather-n6wpdaxxm-sharifmasums-projects.vercel.app/
