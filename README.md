@@ -219,7 +219,7 @@ Provides context for the selected city. The useSelectedCity hook is used to acce
 The application uses Tailwind CSS for styling and responsiveness. The main styles are defined in index.css.
 
 ## Development Log
-Initially, I decided to create an e-commerce full-stack application and started working on that. But during the time or research I was also worried that I might not be able to complete it. In that case I will fall back to default assignment, and weather client app for Application Framework and doctor’s appointment server for Data Modeling and Backend Course (That was also agreed with Pasi). I worked for around 50 hours on this https://github.com/SharifMasum/e-commerce-frontend. Then finally I gave up on e-commerce and decided to make weather application client app.
+The development process of the application documented below.
 
 ### 10/03/2024: Research
 #### Task/Feature: Research and Study
